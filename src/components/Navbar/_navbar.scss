@@ -1,0 +1,55 @@
+.navbar{
+  // padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  // background-color: $clr-black;
+  color: $clr-white;
+  .navbar-sm{
+  padding: 1.25em 0;
+    @include flex;
+    justify-content: space-between;
+    background-color: $clr-black;
+    .container{
+      @include flex;
+      justify-content: space-between;
+
+      .social-links span{
+        margin-left: .5em;
+      }
+    }
+
+  }
+  .menu{
+    // display: none;
+    // @include flex;
+    justify-content: center;
+    gap: 2em;
+    background-color: $card-bg;
+    height: 100%;
+    padding: .65em 0;
+    width: 80%;
+    margin: 0 auto;
+
+    .nav-link{
+      color: $clr-black;
+    }
+    .nav-link:hover,
+    .nav-link:focus{
+      color: $clr-white;
+      transition: .5s;
+    }
+  }
+}
+
+.hide{
+  display: none;
+}
+.show{
+  @include flex;
+}
+
+@media screen and (min-width: 900px) {
+  .navbar{
+    display: none;
+  }
+}
