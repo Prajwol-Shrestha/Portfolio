@@ -28,7 +28,20 @@ export default function Navbar() {
                 {/* <span className={`${!toggleNav ? 'hide': null}`}> <i className="fas fa-times" onClick={() => setToggleNav(false)}/> </span> */}
         </ul>
       </nav>
-      <nav className="navbar-lg"> </nav>
+      <nav className="navbar-lg">
+        <span className="logo"> PS </span>
+        <ul className="links">
+                <Link to='/'  className='nav-link' > <li> <AiOutlineHome size={20}/> </li></Link>
+                <Link to='/projects' className='nav-link' > <li> <GrProjects size={20}/> </li> </Link>
+                <Link to='/skills' className='nav-link' > <li> <BsTools size={20}/> </li> </Link>
+                <Link to='/about' className='nav-link' > <li> <BsPerson size={20}/> </li>  </Link>
+                <Link to='/contact' className='nav-link' > <li> <AiOutlineMail size={20}/>  </li></Link>
+        </ul>
+        <div className="social-links">
+            <span> < AiFillGithub size={20}/> </span>
+            <span>  <BsFacebook size={20}/> </span>
+        </div>
+      </nav>
     </>
   );
 }

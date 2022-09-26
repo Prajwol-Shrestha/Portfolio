@@ -1,3 +1,7 @@
+.navbar-lg{
+  display: none;
+}
+
 .navbar{
   // padding: 1em 0;
   position: fixed;
@@ -52,4 +56,39 @@
   .navbar{
     display: none;
   }
+  .navbar-lg{
+    padding: 1em 0;
+    background-color: $clr-black;
+    width: 5vw;
+    min-height: 100vh;
+    color: $clr-white;
+    @include flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  
+
+    .social-links, .links{
+      @include flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    .links{
+      .nav-link{
+        color: $clr-white;
+        opacity: 0.65;
+      }
+    }
+    .social-links{
+      span{
+        cursor: pointer;
+      }
+    }
+
+    .nav-link:hover,
+    .nav-link:focus{
+      opacity: 1;
+    }
+  }
 }
+
