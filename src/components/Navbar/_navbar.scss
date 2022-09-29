@@ -4,15 +4,17 @@
 
 .navbar{
   // padding: 1em 0;
-  position: fixed;
+  position: sticky;
   width: 100%;
-  // background-color: $clr-black;
+  height: 10vh;
   color: $clr-white;
+
   .navbar-sm{
   padding: 1.25em 0;
     @include flex;
     justify-content: space-between;
     background-color: $clr-black;
+    
     .container{
       @include flex;
       justify-content: space-between;
@@ -57,6 +59,7 @@
     display: none;
   }
   .navbar-lg{
+    position: fixed;
     padding: 1em 0;
     background-color: $clr-black;
     width: 5vw;

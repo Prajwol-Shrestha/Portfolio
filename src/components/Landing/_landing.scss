@@ -1,0 +1,23 @@
+.hero-section {
+  @include flex;
+  justify-content: center;
+  height: 90vh;
+  background: rgb(58, 28, 78);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 28, 78, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(69, 63, 63, 1) 100%
+  );
+
+  .intro {
+    color: $clr-white;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-section {
+    min-height: 100vh;
+  }
+}

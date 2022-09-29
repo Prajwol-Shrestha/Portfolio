@@ -1,25 +1,31 @@
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.container{
-    width: 90%;
-    margin: 0 auto;
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+  gap: 0.35em;
+  align-items: center;
+  justify-content: center;
 }

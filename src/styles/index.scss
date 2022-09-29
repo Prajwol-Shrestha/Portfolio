@@ -1,8 +1,9 @@
-@import './global';
 @import './variables';
+@import './global';
 @import './typography';
 @import './mixins';
 
-
-@import '../components/navbar/navbar'
+@import './tooltip';
+@import '../components/navbar/navbar';
+@import '../components/Landing/landing';
 

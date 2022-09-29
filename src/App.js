@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import Landing from "./components/Landing/Landing";
 
 import Navbar from "./components/Navbar/Navbar";
 
@@ -8,6 +9,7 @@ function App() {
     <Router> 
       <div className="App">
         <Navbar />
+        <Landing />
       </div>
     </Router>
   );
