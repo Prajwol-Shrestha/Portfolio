@@ -1,12 +1,13 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { AiOutlineCloudDownload } from 'react-icons/ai'
 
 export default function Landing() {
   return (
     <section className="hero-section">
       <div className="intro">
         <h1 className="heading"> Prajwol Shrestha </h1>
-        <p className="title flex">
+        <div className="title flex">
           I am a
           <Typewriter
           I am a
@@ -16,7 +17,11 @@ export default function Landing() {
               loop: true,
             }}
           />{" "}
-        </p>
+        </div>
+          <div className="btn-container">
+            <button className="btn"> <AiOutlineCloudDownload /> Resume </button>
+            <button className="btn"> Contact </button>
+          </div>
       </div>
     </section>
   );

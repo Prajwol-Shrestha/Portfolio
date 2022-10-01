@@ -1,13 +1,15 @@
 .navbar-lg{
   display: none;
+  z-index: 1;
 }
 
 .navbar{
   // padding: 1em 0;
-  position: sticky;
+  position: fixed;
   width: 100%;
   height: 10vh;
   color: $clr-white;
+  z-index: 1;
 
   .navbar-sm{
   padding: 1.25em 0;
