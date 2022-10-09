@@ -2,7 +2,7 @@
   @include flex;
   justify-content: center;
   height: 100vh;
-  background: rgb(58, 28, 78);
+  // background: rgb(58, 28, 78);
   background: linear-gradient(
     90deg,
     rgba(58, 28, 78, 1) 0%,
@@ -20,5 +20,8 @@
 @media screen and (min-width: 900px) {
   .hero-section {
     min-height: 100vh;
+    .intro{
+      margin-top: 0;
+    }
   }
 }

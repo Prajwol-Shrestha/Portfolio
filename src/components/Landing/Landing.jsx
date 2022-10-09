@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { AiOutlineCloudDownload } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 export default function Landing() {
   return (
@@ -20,7 +21,9 @@ export default function Landing() {
         </div>
           <div className="btn-container">
             <button className="btn"> <AiOutlineCloudDownload /> Resume </button>
-            <button className="btn"> Contact </button>
+            <Link to="/contact">
+              <button className="btn"> Contact </button>
+            </Link>
           </div>
       </div>
     </section>

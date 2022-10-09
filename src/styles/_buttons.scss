@@ -6,17 +6,36 @@
     gap: 1em;
 
     .btn{
-        padding: .5em 1em;
+        padding: .65em 1em;
         @include flex;
         justify-content: center;
         gap: .5em;
         min-width: 150px;
         cursor: pointer;
+        border: none;
+        background-color: $clr-white;
+        transition: .65s ease-out;
+        border-radius: 0.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.125rem;
+    }
+    .btn:hover,
+    .btn:focus{
+        background: transparent;
+        // border: 1px solid $clr-white;
+        box-shadow:inset 0px 0px 0px 1px $clr-white;
+        color: $clr-white;
     }
 }
 
 @media screen and (min-width: 900px) {
     .btn-container{
         flex-direction: row;
+        justify-content: center;
+
+        .btn{
+            min-width: 120px;
+        }
     }
 }

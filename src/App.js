@@ -1,19 +1,13 @@
 import React from "react";
 // import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  Outlet,
-  useLocation,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Outlet, useLocation} from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Landing from "./components/Landing/Landing";
-
 import Navbar from "./components/Navbar/Navbar";
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
+import About from './components/About/About';
 import Contact from "./components/Contact/Contact";
 
 const PageLayout = ({ children }) => children;
@@ -29,8 +23,8 @@ const pageVariants = {
 
   },
   out: {
-    transform: 'translateX(-100vh)',
     opacity: 0,
+    transform: 'translateX(-100vw)',
   },
 };
 
@@ -65,6 +59,9 @@ function App() {
         <Routes>
           <Route element={<AnimationLayout />}>
             <Route path="/" element={<Landing />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>

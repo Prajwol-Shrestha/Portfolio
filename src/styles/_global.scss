@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+body{
+  background: linear-gradient(
+    90deg,
+    rgba(58, 28, 78, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(69, 63, 63, 1) 100%
+  );
+}
+
 img {
   max-width: 100%;
 }
