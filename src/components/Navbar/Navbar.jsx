@@ -12,12 +12,16 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="navbar-sm ">
           <div className="container">
-            <span className="logo"> PS </span>
+            <Link to='/' className="nav-link">
+              <div className="logo"> PS </div>
+            </Link>
             <div className="social-links">
-              <span>
-                {" "}
-                <AiFillGithub size={20} />{" "}
-              </span>
+              <a href="https://github.com/Prajwol-Shrestha" target="_blank" rel="noopener noreferrer" >
+                <span>
+                  {" "}
+                  <AiFillGithub size={20} />{" "}
+                </span>
+              </a>
               <span>
                 {" "}
                 <BsFacebook size={20} />{" "}
@@ -72,7 +76,9 @@ export default function Navbar() {
         </ul>
       </nav>
       <nav className="navbar-lg">
-        <span className="logo"> PS </span>
+        <Link to='/' className="nav-link">
+          <div className="logo"> PS </div>
+        </Link>
         <ul className="links">
           <Link to="/" className="nav-link tooltip">
             {" "}
@@ -116,14 +122,16 @@ export default function Navbar() {
           </Link>
         </ul>
         <div className="social-links">
+        <a href="https://github.com/Prajwol-Shrestha" target="_blank" rel="noopener noreferrer" >
           <span>
             {" "}
             <AiFillGithub size={20} />{" "}
           </span>
-          <span>
-            {" "}
-            <BsFacebook size={20} />{" "}
-          </span>
+          </a>
+            <span>
+              {" "}
+              <BsFacebook size={20} />{" "}
+            </span>
         </div>
       </nav>
     </>

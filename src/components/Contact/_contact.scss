@@ -1,0 +1,65 @@
+.contact-page{
+    flex-direction: column;
+    gap: 2em;
+    letter-spacing: .06rem;
+    
+    .contact-info{
+        min-width: 250px;
+        max-width: 300px;
+        .title{
+            color: $clr-white;
+            font-size: $base-font-size * 0.8;
+            margin-bottom: 0;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .para{
+            text-align: left;
+            color: rgba($color: $clr-white, $alpha: 0.65);
+        }
+    }
+
+    .form-container{
+        min-width: 250px;
+        max-width: 400px;
+        form{
+            @include flex;
+            flex-direction: column;
+            gap: 1em;
+            input, textarea{
+                letter-spacing: inherit;
+                width: 100%;
+                padding: .5em 1em;
+                border: none;
+                border-radius: 5px;
+            }
+            textarea{
+                resize: none;
+                height: 60px;
+            }
+            .btn-container{
+                padding: .5em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .contact-page{
+        flex-direction: row;
+        gap: 4em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact-page{
+        gap: 4em;
+    }
+    .contact-info{
+        width: 40%;
+    }
+
+    .form-container{
+        width: 60%;
+    }
+}

@@ -1,0 +1,44 @@
+.hero-section{
+    .container-about{
+        max-width: 400px;
+        .about-container{
+            @include flex;
+            flex-direction: column;
+            gap: 2em;
+
+            .img-container{
+                width: 60%;
+            }
+
+            .bio{
+                padding: 0 1em;
+                .para{
+                    color: rgba($color: $clr-white, $alpha: 0.85);
+                    // text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero-section{
+        .container-about{
+            max-width: 800px;
+            .about-container{
+                flex-direction: row;
+                .img-container{
+                    width: 50%;
+                    @include flex;
+                    justify-content: center;
+                    img{
+                        width: 80%;
+                    }
+                }
+                .bio{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

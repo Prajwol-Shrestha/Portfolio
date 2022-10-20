@@ -18,6 +18,7 @@ body{
     text-transform: capitalize;
     color: $clr-white;
     margin: .65em 0;
+    letter-spacing: .065rem;
 }
 .sub-heading{
     font-size: $base-font-size * 1.5;
@@ -47,6 +48,16 @@ li{
 
 span{
     font-size: $base-font-size * 1.15;
+}
+
+.caption{
+    margin-top: .5em;
+    font-weight: 500;
+    font-size: $base-font-size * 1;
+    text-align: center;
+    color: $clr-white;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 900px) {

@@ -2,8 +2,14 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import { AiOutlineCloudDownload } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+import resumePdf from '../../assets/Resume.pdf'
 
 export default function Landing() {
+
+  function preview() {
+    window.open(`${resumePdf}`, "_blank");
+  }
+
   return (
     <section className="hero-section">
       <div className="intro">
@@ -20,7 +26,7 @@ export default function Landing() {
           />{" "}
         </div>
           <div className="btn-container">
-            <button className="btn"> <AiOutlineCloudDownload /> Resume </button>
+            <button className="btn" onClick={preview} > <AiOutlineCloudDownload /> Resume </button>
             <Link to="/contact">
               <button className="btn"> Contact </button>
             </Link>
