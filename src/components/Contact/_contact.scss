@@ -1,4 +1,5 @@
 .contact-page{
+    animation-delay: 0.5s;
     flex-direction: column;
     gap: 2em;
     letter-spacing: .06rem;
@@ -20,6 +21,7 @@
     }
 
     .form-container{
+        animation-delay: 0.5s;
         min-width: 250px;
         max-width: 400px;
         form{

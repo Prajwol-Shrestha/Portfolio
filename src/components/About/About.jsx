@@ -4,7 +4,7 @@ import avatar from "../../assets/avatar.png";
 export default function About() {
   return (
     <section className="hero-section">
-      <div className="container-about">
+      <div className="scale-up-center container-about">
         <h1 className="heading"> About me </h1>
         <div className="about-container">
           <div className="img-container">

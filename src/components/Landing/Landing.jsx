@@ -12,7 +12,7 @@ export default function Landing() {
 
   return (
     <section className="hero-section">
-      <div className="intro">
+      <div className="scale-up-center intro">
         <h1 className="heading"> Prajwol Shrestha </h1>
         <div className="title flex">
           I am a

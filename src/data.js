@@ -25,6 +25,10 @@ export default [
                 name: 'python',
                 img: require('./assets/python-logo.png')
             },
+            {
+                name: 'github',
+                img: require('./assets/github-logo-try.png')
+            },
         ]
     },
 

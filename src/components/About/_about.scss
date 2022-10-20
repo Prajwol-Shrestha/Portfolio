@@ -1,5 +1,6 @@
 .hero-section{
     .container-about{
+        animation-delay: 0.5s;
         max-width: 400px;
         .about-container{
             @include flex;

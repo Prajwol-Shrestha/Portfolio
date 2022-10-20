@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
   return (
     <section className="hero-section contact-page">
-      <div className='form-container'>
+      <div className='scale-up-center form-container'>
         <h2 className='heading'> Get In Touch </h2>
         <form>
           <input type='text' placeholder='Your Name'/>
@@ -15,7 +15,7 @@ export default function Contact() {
           </div>
         </form>
       </div>
-      <div className='contact-info'>
+      <div className='scale-up-center contact-info'>
         <div className='email-info'>
           <h3 className='title'> Email </h3>
           <p className='para'> prajwolshrestha08@gmail.com </p>
