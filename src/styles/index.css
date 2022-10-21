@@ -355,8 +355,10 @@ span {
   }
 }
 .hero-section .container {
-  margin-top: 30vh;
   max-width: 600px;
+}
+.hero-section .container .skills-heading {
+  margin-top: 10em;
 }
 .hero-section .container .skills-container {
   display: grid;
@@ -380,7 +382,7 @@ span {
 .hero-section .container .skills-container .skill:hover,
 .hero-section .container .skills-container .skill:focus {
   cursor: pointer;
-  transform: scale(1.15);
+  transform: scale(1.15) !important;
 }
 
 .skill:nth-child(1) {
@@ -423,13 +425,8 @@ span {
           animation-delay: 2s;
 }
 
-.github-logo {
-  background-color: #fff;
-  border-radius: 50%;
-}
-
 @media screen and (min-width: 900px) {
-  .hero-section .container {
+  .hero-section .container .skills-heading {
     margin-top: 0;
   }
 }

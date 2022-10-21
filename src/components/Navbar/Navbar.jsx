@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineMail, AiFillGithub } from "react-icons/ai";
 import { BsPerson, BsTools, BsFacebook } from "react-icons/bs";
-import { GrProjects } from "react-icons/gr";
+import { BsFillBriefcaseFill } from "react-icons/bs";
 
 export default function Navbar() {
   const [toggleNav, setToggleNav] = useState(false);
@@ -48,7 +48,7 @@ export default function Navbar() {
             {" "}
             <li>
               {" "}
-              <GrProjects size={20} />{" "}
+              <BsFillBriefcaseFill size={20} />{" "}
             </li>{" "}
           </Link>
           <Link to="/skills" className="nav-link">
@@ -92,7 +92,7 @@ export default function Navbar() {
             {" "}
             <li>
               {" "}
-              <GrProjects size={20} />{" "}
+              <BsFillBriefcaseFill size={20} />{" "}
               <span className="tooltiptext para">Projects</span>{" "}
             </li>{" "}
           </Link>
