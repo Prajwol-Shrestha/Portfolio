@@ -127,6 +127,41 @@ span {
     transform: scale(1);
   }
 }
+.lds-dual-ring {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
+          animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .btn-container {
   padding: 1em;
   display: flex;
@@ -458,22 +493,32 @@ span {
   min-width: 250px;
   max-width: 400px;
 }
+.contact-page .form-container .heading {
+  margin-top: 5em;
+}
 .contact-page .form-container form {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1em;
 }
-.contact-page .form-container form input, .contact-page .form-container form textarea {
+.contact-page .form-container form .input-container {
+  width: 100%;
+}
+.contact-page .form-container form .input-container input, .contact-page .form-container form .input-container textarea {
   letter-spacing: inherit;
   width: 100%;
   padding: 0.5em 1em;
   border: none;
   border-radius: 5px;
 }
-.contact-page .form-container form textarea {
+.contact-page .form-container form .input-container textarea {
   resize: none;
   height: 60px;
+}
+.contact-page .form-container form .input-container .error {
+  color: rgba(185, 70, 70, 0.85);
+  font-size: 0.8rem;
 }
 .contact-page .form-container form .btn-container {
   padding: 0.5em;
@@ -483,6 +528,9 @@ span {
   .contact-page {
     flex-direction: row;
     gap: 4em;
+  }
+  .contact-page .form-container .heading {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1000px) {
