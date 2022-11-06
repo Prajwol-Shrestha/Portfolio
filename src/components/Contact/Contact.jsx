@@ -150,7 +150,7 @@ export default function Contact() {
           <p className="para">
             {" "}
             <a
-              href="https://github.com/Prajwol-Shrestha"
+              href="https://www.facebook.com/prajwol.shrestha.16/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -159,7 +159,7 @@ export default function Contact() {
             </a>{" "}
             |{" "}
             <a
-              href="https://github.com/Prajwol-Shrestha"
+              href="https://www.linkedin.com/in/prajwol-shrestha-04265a241"
               target="_blank"
               rel="noopener noreferrer"
             >

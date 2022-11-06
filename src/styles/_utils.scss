@@ -1,0 +1,33 @@
+.underline {
+  width: 80px;
+  border: 1px solid $clr-white;
+  color: $clr-white;
+  margin: 0 auto 1em auto;
+}
+
+.flex {
+  display: flex;
+  gap: 0.35em;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.mt {
+  margin-top: 10em;
+}
+@media screen and (min-width: 500px) {
+  .mt {
+    margin-top: 10em;
+  }
+}
+@media screen and (min-width: 900px) {
+  .mt {
+    margin-top: 0;
+  }
+}

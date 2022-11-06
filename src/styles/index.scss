@@ -2,6 +2,7 @@
 @import './variables';
 @import './global';
 @import './typography';
+@import './utils';
 @import './mixins';
 @import './animations';
 
@@ -12,4 +13,5 @@
 @import '../components/About/about';
 @import '../components/Skills/skills';
 @import '../components/Contact/contact';
+@import '../components/Projects/projects';
 

@@ -6,6 +6,7 @@ export default function Skills() {
     <section className="hero-section">
       <div className='container'>
         <h1 className='heading skills-heading'> Skills </h1>
+        <div className="underline"></div>
         <article className='skills-container'>
           { data[0].skills.map( (skill, index) => (
             <div className='scale-up-center skill' key={index}>

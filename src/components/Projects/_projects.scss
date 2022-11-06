@@ -1,0 +1,72 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 16em);
+  grid-auto-rows: auto;
+  justify-content: center;
+  gap: 1em;
+  .card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    letter-spacing: 0.05rem;
+
+    .overlay {
+      position: absolute;
+      height: 60%;
+      width: 100%;
+      bottom: -120px;
+      left: 0;
+      transition: 0.5s ease;
+      background-color: rgba($color: $clr-black, $alpha: 0.75);
+      z-index: 2;
+    }
+  }
+  .overlay-content {
+    color: $clr-white;
+    padding: 0 1em .5em 1em;
+    .tags-container{
+      @include flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: .25em;
+      margin-bottom: .5em;
+      .tag{
+        font-size: $base-font-size * 0.8;
+        font-weight: bold;
+        background-color: rgba($color: $clr-white, $alpha: 0.85);
+        color: $clr-black;
+        padding: .25em .5em;
+        border-radius: 10px;
+        cursor: pointer;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .card:hover {
+    .overlay {
+      bottom: 0px;  
+    }
+  }
+}
+
+
+@for $i from 1 through 8 {
+  .card:nth-child(#{$i}) {
+      animation-delay: $i * 0.25s;
+  }
+}
+
+@media (hover: none){
+  .grid-container{
+    .card{
+      .overlay{
+        bottom: 0;
+      }
+    }
+  }
+}
+

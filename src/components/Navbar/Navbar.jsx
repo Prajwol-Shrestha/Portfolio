@@ -12,20 +12,30 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="navbar-sm ">
           <div className="container">
-            <Link to='/' className="nav-link">
+            <Link to="/" className="nav-link">
               <div className="logo"> PS </div>
             </Link>
             <div className="social-links">
-              <a href="https://github.com/Prajwol-Shrestha" target="_blank" rel="noopener noreferrer" >
+              <a
+                href="https://github.com/Prajwol-Shrestha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   {" "}
                   <AiFillGithub size={20} />{" "}
                 </span>
               </a>
-              <span>
-                {" "}
-                <BsFacebook size={20} />{" "}
-              </span>
+              <a
+                href="https://www.facebook.com/prajwol.shrestha.16/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  {" "}
+                  <BsFacebook size={20} />{" "}
+                </span>
+              </a>
             </div>
             <span>
               {" "}
@@ -76,7 +86,7 @@ export default function Navbar() {
         </ul>
       </nav>
       <nav className="navbar-lg">
-        <Link to='/' className="nav-link">
+        <Link to="/" className="nav-link">
           <div className="logo"> PS </div>
         </Link>
         <ul className="links">
@@ -122,16 +132,26 @@ export default function Navbar() {
           </Link>
         </ul>
         <div className="social-links">
-        <a href="https://github.com/Prajwol-Shrestha" target="_blank" rel="noopener noreferrer" >
-          <span>
-            {" "}
-            <AiFillGithub size={20} />{" "}
-          </span>
+          <a
+            href="https://github.com/Prajwol-Shrestha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              {" "}
+              <AiFillGithub size={20} />{" "}
+            </span>
           </a>
+          <a
+            href="https://www.facebook.com/prajwol.shrestha.16/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span>
               {" "}
               <BsFacebook size={20} />{" "}
             </span>
+          </a>
         </div>
       </nav>
     </>

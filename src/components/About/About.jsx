@@ -6,6 +6,7 @@ export default function About() {
     <section className="hero-section">
       <div className="scale-up-center container-about">
         <h1 className="heading"> About me </h1>
+        <div className="underline"></div>
         <div className="about-container">
           <div className="img-container">
             <img src={avatar} alt="myimage" />
