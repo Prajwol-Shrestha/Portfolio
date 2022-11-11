@@ -24,9 +24,7 @@
         animation-delay: 0.5s;
         min-width: 250px;
         max-width: 400px;
-        .heading{
-            margin-top: 5em
-        }
+        
         form{
             @include flex;
             flex-direction: column;

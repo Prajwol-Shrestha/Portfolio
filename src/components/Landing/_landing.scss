@@ -1,7 +1,7 @@
 .hero-section {
   @include flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   // background: rgb(58, 28, 78);
   background: linear-gradient(
     90deg,

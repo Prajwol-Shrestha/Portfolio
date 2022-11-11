@@ -114,14 +114,9 @@ span {
 }
 
 .mt {
-  margin-top: 10em;
+  margin-top: 3em;
 }
 
-@media screen and (min-width: 500px) {
-  .mt {
-    margin-top: 10em;
-  }
-}
 @media screen and (min-width: 900px) {
   .mt {
     margin-top: 0;
@@ -351,7 +346,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(90deg, rgb(58, 28, 78) 0%, rgb(0, 0, 0) 0%, rgb(69, 63, 63) 100%);
 }
 .hero-section .intro {
@@ -410,9 +405,6 @@ span {
   .hero-section .container-about .about-container .bio {
     width: 50%;
   }
-}
-.hero-section .container .skills-heading {
-  margin-top: 10em;
 }
 .hero-section .container .skills-container {
   display: grid;
@@ -511,9 +503,6 @@ span {
           animation-delay: 0.5s;
   min-width: 250px;
   max-width: 400px;
-}
-.contact-page .form-container .heading {
-  margin-top: 5em;
 }
 .contact-page .form-container form {
   display: flex;

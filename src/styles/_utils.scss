@@ -19,13 +19,9 @@
 }
 
 .mt {
-  margin-top: 10em;
+  margin-top: 3em;
 }
-@media screen and (min-width: 500px) {
-  .mt {
-    margin-top: 10em;
-  }
-}
+
 @media screen and (min-width: 900px) {
   .mt {
     margin-top: 0;

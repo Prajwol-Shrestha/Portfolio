@@ -1,5 +1,7 @@
 import React from "react";
 import avatar from "../../assets/avatar.png";
+import { Link } from "react-router-dom";
+
 
 export default function About() {
   return (
@@ -14,9 +16,14 @@ export default function About() {
           <div className="bio">
             <p className="para">
               I am a self-taught front-end developer. I primarily focus on
-              writing clean, elegant, and efficient code. I am proficient in
+              writing clean, and efficient code. I am proficient in
               HTML, CSS, SASS, JavaScript and React JS.
             </p>
+            <div className="btn-container">
+              <Link to="/contact">
+              <button className="btn"> Hire me! </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

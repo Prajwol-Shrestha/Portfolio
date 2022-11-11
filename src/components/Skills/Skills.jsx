@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section className="hero-section">
       <div className='container'>
-        <h1 className='heading skills-heading'> Skills </h1>
+        <h1 className='heading mt'> Skills </h1>
         <div className="underline"></div>
         <article className='skills-container'>
           { data[0].skills.map( (skill, index) => (

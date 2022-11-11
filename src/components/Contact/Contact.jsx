@@ -79,7 +79,7 @@ export default function Contact() {
   return (
     <section className="hero-section contact-page">
       <div className="scale-up-center form-container">
-        <h2 className="heading"> Get In Touch </h2>
+        <h2 className="heading mt"> Get In Touch </h2>
         <form ref={form} onSubmit={formik.handleSubmit}>
           <div className="input-container">
             <input
