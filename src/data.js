@@ -54,13 +54,33 @@ export default [
                 tags: ['react js', 'sass']   
             },
             {
+                title: 'Trafalgar Landing',
+                description: "Trafalgar Landing Page",
+                url: 'https://yipl-frontend-challenge.netlify.app/',
+                gif: require('./assets/trafalgar.gif'),
+                tags: ['html', 'sass', 'javascript']   
+            },           
+            {
+                title: 'Tip Calculator App',
+                description: "A Challenge from Frontend Mentor",
+                url: 'https://prajwol-shrestha.github.io/Front%20End%20Mentor/tip-calculator-app-main/',
+                gif: require('./assets/tip.gif'),
+                tags: ['html','javascript', 'css']   
+            },
+            {
                 title: 'Sunny Side Agency Landing Page',
                 description: "A Challenge from Frontend Mentor",
                 url: 'https://prajwol-shrestha.github.io/Front%20End%20Mentor/sunnyside-agency-landing-page-main/',
                 gif: require('./assets/sunnyside-landing.gif'),
                 tags: ['javascript', 'css']   
-            },            
-            
+            },
+            {
+                title: 'Flyo Landing Page',
+                description: "A Challenge from Frontend Mentor",
+                url: 'https://prajwol-shrestha.github.io/Front%20End%20Mentor/fylo-dark-theme-landing-page-master/',
+                gif: require('./assets/flyo.gif'),
+                tags: ['html','javascript', 'css']   
+            }, 
         ]
     },
 

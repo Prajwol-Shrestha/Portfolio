@@ -14,8 +14,11 @@ export default function Projects() {
           {data[0].projects.map((project, index) => (
             <div
               className="card scale-up-center"
-              style={{ backgroundImage: `url(${project.gif})` }}
+              style={{ 
+                backgroundImage: `url(${project.gif})`
+              }}
               key={index}
+              loading="lazy"
             >
               <div className="overlay">
                 <div className="overlay-content">
