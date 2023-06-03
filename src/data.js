@@ -18,6 +18,10 @@ export default [
                 img: require('./assets/js-logo.png')
             },
             {
+                name: 'typescript',
+                img: require('./assets/ts-logo.png')
+            },
+            {
                 name: 'react js',
                 img: require('./assets/react-logo.png')
             },
@@ -39,14 +43,14 @@ export default [
                 title: 'BIT INFO NEPAL',
                 description: "A Platform for BIT TU Students.",
                 url: 'https://www.bitinfonepal.com/',
-                gif: require('./assets/bitinfonepal.gif'),
+                gif: require('./assets/bitinfo.gif'),
                 tags: ['react js', 'sass', 'firebase']   
             },
             {
-                title: 'Shopping Cart',
-                description: "Shopping Cart Project",
-                url: 'https://randomshop-shopping-cart.netlify.app/',
-                gif: require('./assets/cart.gif'),
+                title: 'Space Tourism',
+                description: "A Challenge from Fronend Mentor",
+                url: 'https://space-tourism-frontend-mentor-jr.netlify.app/',
+                gif: require('./assets/space.gif'),
                 tags: ['react js', 'sass']   
             },
             {
