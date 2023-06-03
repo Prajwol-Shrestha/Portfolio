@@ -1,11 +1,61 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { AiOutlineHome, AiOutlineMail, AiFillGithub } from "react-icons/ai";
-import { BsPerson, BsTools, BsFacebook } from "react-icons/bs";
+import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
+import { BsPerson, BsTools, BsLinkedin } from "react-icons/bs";
+import { FaDev, FaFacebookSquare, FaGithubSquare } from 'react-icons/fa'
 import { BsFillBriefcaseFill } from "react-icons/bs";
 
 export default function Navbar() {
   const [toggleNav, setToggleNav] = useState(false);
+
+
+  function SocialIcons() {
+    return (
+      <div className="social-links">
+        <a
+          href="https://www.linkedin.com/in/prajwol-shrestha-04265a241"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>
+            {" "}
+            <BsLinkedin size={20} />{" "}
+          </span>
+        </a>
+        <a
+          href="https://dev.to/prajwolshrestha"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>
+            {" "}
+            <FaDev size={20} />{" "}
+          </span>
+        </a>
+        <a
+          href="https://github.com/Prajwol-Shrestha"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>
+            {" "}
+            <FaGithubSquare size={20} />{" "}
+          </span>
+        </a>
+        <a
+          href="https://www.facebook.com/prajwol.shrestha.16/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>
+            {" "}
+            <FaFacebookSquare size={20} />{" "}
+          </span>
+        </a>
+
+      </div>
+    )
+  }
 
   return (
     <>
@@ -15,28 +65,7 @@ export default function Navbar() {
             <Link to="/" className="nav-link">
               <div className="logo"> PS </div>
             </Link>
-            <div className="social-links">
-              <a
-                href="https://github.com/Prajwol-Shrestha"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>
-                  {" "}
-                  <AiFillGithub size={20} />{" "}
-                </span>
-              </a>
-              <a
-                href="https://www.facebook.com/prajwol.shrestha.16/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>
-                  {" "}
-                  <BsFacebook size={20} />{" "}
-                </span>
-              </a>
-            </div>
+            <SocialIcons />
             <span>
               {" "}
               <i
@@ -131,28 +160,7 @@ export default function Navbar() {
             </li>
           </Link>
         </ul>
-        <div className="social-links">
-          <a
-            href="https://github.com/Prajwol-Shrestha"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>
-              {" "}
-              <AiFillGithub size={20} />{" "}
-            </span>
-          </a>
-          <a
-            href="https://www.facebook.com/prajwol.shrestha.16/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>
-              {" "}
-              <BsFacebook size={20} />{" "}
-            </span>
-          </a>
-        </div>
+        <SocialIcons />
       </nav>
     </>
   );
