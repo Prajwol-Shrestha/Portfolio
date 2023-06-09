@@ -19,7 +19,7 @@ export default function Navbar() {
         >
           <span>
             {" "}
-            <BsLinkedin size={20} />{" "}
+            <BsLinkedin size={18} />{" "}
           </span>
         </a>
         <a

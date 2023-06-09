@@ -25,10 +25,10 @@ export default [
                 name: 'react js',
                 img: require('./assets/react-logo.png')
             },
-            {
-                name: 'python',
-                img: require('./assets/python-logo.png')
-            },
+            // {
+            //     name: 'python',
+            //     img: require('./assets/python-logo.png')
+            // },
             {
                 name: 'git',
                 img: require('./assets/git-logo.png')
