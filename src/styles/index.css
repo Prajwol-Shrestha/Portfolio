@@ -127,6 +127,22 @@ span {
     margin-top: 0;
   }
 }
+.intro .heading {
+  display: inline-block;
+  font-size: 36px;
+  display: flex;
+  gap: 0.125em;
+}
+.intro .heading .letter {
+  font-size: 2rem;
+  display: inline-block;
+  animation-play-state: paused;
+  cursor: default;
+}
+.intro .heading .letter:hover {
+  transform: translateY(-8px);
+}
+
 .scale-up-center {
   -webkit-animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -413,7 +429,6 @@ span {
 }
 .hero-section .container .skills-container .skill:hover,
 .hero-section .container .skills-container .skill:focus {
-  cursor: pointer;
   transform: scale(1.15) !important;
 }
 

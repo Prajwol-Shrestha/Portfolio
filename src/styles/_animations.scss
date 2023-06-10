@@ -1,3 +1,28 @@
+// letter jump animation when hovered
+.intro{
+  .heading {
+    display: inline-block;
+    font-size: 36px;
+    display: flex;
+    gap: .125em;
+  }
+  
+  .heading .letter {
+    font-size: $base-font-size * 2;
+    display: inline-block; 
+    animation-play-state: paused; 
+    cursor: default;
+  }
+
+  .heading .letter:hover {
+    transform: translateY(-8px);
+  }
+}
+
+
+
+
+
 // Scale Up Center
 
 .scale-up-center {
